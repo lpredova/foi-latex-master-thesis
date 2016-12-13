@@ -1,6 +1,8 @@
 \select@language {croatian}
 \contentsline {chapter}{\numberline {1}Uvod}{1}
 \contentsline {chapter}{\numberline {2}Slike}{2}
+\contentsline {section}{\numberline {2.1}Section}{2}
+\contentsline {subsection}{\numberline {2.1.1}Subsection}{2}
 \contentsline {chapter}{\numberline {3}Tablice}{3}
 \contentsline {chapter}{\numberline {4}Formule}{4}
 \contentsline {chapter}{\numberline {5}Hiperveze}{5}
