@@ -15,25 +15,16 @@
 \ProvidesClass{foi}[2011/10/28 Faculty of Organization and Informatics Thesis template class]
 
 \LoadClass{report}
-
-
-\renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
-\newcommand{\thesisTitle}{\fontsize{22pt}}
-
 \usepackage[margin=3cm]{geometry}
-
 \usepackage{listings}
 \usepackage{color}
-
 \usepackage[croatian]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{url}
 \usepackage[pdftex]{graphicx}
 \DeclareGraphicsExtensions{.png,.pdf,.jpg,.jpeg}
-\usepackage{sfmath}
-\renewcommand{\rmdefault}{\sfdefault}
-\renewcommand{\scdefault}{\sfdefault}
 
+\usepackage{sfmath}
 \usepackage[pdftex,
 bookmarks=true,
 bookmarksnumbered=true,
@@ -45,15 +36,16 @@ urlcolor=black,
 pdfborder={0 0 0}
 ]{hyperref}
 
-% headers and footers includes for your document
 \usepackage{fancyheadings}
-
-% count the number of pages for display on footer
 \usepackage{lastpage}
-
 \usepackage{setspace}
-
 \usepackage{ifthen}
+\usepackage{datetime}
+
+\renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
+\newcommand{\thesisTitle}{\fontsize{22pt}}
+\renewcommand{\rmdefault}{\sfdefault}
+\renewcommand{\scdefault}{\sfdefault}
 
 \newcommand{\naslov}{Naslov rada}
 \newcommand{\kolegij}{Kolegij}
@@ -67,6 +59,10 @@ pdfborder={0 0 0}
 \newcommand{\fakultet}{\textbf{FAKULTET ORGANIZACIJE I INFORMATIKE}}
 \newcommand{\grad}{\textbf{VARA\v{Z}DIN}}
 \newcommand{\gradSmall}{\textbf{Vara\v{z}din}}
+
+%format date
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH] \THEYEAR.}
 
 %document headers and footers
 \chead{}
@@ -97,7 +93,7 @@ pdfborder={0 0 0}
 
 \vspace{0.1\pdfpageheight}
 \begin{flushleft}
-    \autori{\brojAutora}
+    \Large{\autori{\brojAutora}}
 \end{flushleft}
 \vspace{0.1\pdfpageheight}
 
@@ -122,17 +118,26 @@ pdfborder={0 0 0}
 \newpage
 \setcounter{page}\@ne
 
+
 % detail page
 \thispagestyle{empty}
 \begin{center}
 \sc{\sveuciliste}  \\
 \sc{\fakultet}  \\
 \sc{\grad} \\
+
+\vspace{0.05\pdfpageheight}
+
 \begin{flushleft}
     \autori{\brojAutora}
+    \vspace{0.01\pdfpageheight}
+    Maticni broj: asdasd \\
+    \vspace{0.01\pdfpageheight}
+    Studij: Baze podataka
 \end{flushleft}
 
-\vspace{0.3\pdfpageheight}
+\vspace{0.2\pdfpageheight}
+
 \textbf{\sc{\Huge{\naslov}}} \\
 \sc{\large{\vrstaRada}} \\
 \end{center}
@@ -140,26 +145,24 @@ pdfborder={0 0 0}
 \noindent
 \begin{minipage}{\textwidth}
 \begin{minipage}{0.3\textwidth}
-\begin{flushleft}
-    \autori{\brojAutora}
-\end{flushleft}
 \end{minipage}
 \hfill
 \begin{minipage}{0.5\textwidth}
+
+% Mentor
 \begin{flushright}
     Mentor: \\ 
     \textbf{\mentor}
 \end{flushright}
+
 \end{minipage}
 \vspace{0.1\pdfpageheight}
 \vfill
-\centering{\sc{{\grad}, \@date}}
+\centering{\sc{{\gradSmall}, \monthyeardate\today}}
 \end{minipage}
 \normalfont
 \newpage
 \setcounter{page}\@ne
-
-
 }
 
 
