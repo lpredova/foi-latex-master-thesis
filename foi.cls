@@ -15,7 +15,12 @@
 \ProvidesClass{foi}[2016/12/14 Faculty of Organization and Informatics Master Thesis template class]
 \LoadClass{report}
 
-% formatting - times new roman text and titles arial
+\usepackage{mathptmx}
+\usepackage{fancyheadings}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{ifthen}
+\usepackage{datetime}
 \usepackage[margin=3cm]{geometry}
 \usepackage{listings}
 \usepackage{color}
@@ -24,13 +29,6 @@
 \usepackage{url}
 \usepackage[pdftex]{graphicx}
 \DeclareGraphicsExtensions{.png,.pdf,.jpg,.jpeg}
-
-\usepackage{mathptmx}
-\usepackage{fancyheadings}
-\usepackage{lastpage}
-\usepackage{setspace}
-\usepackage{ifthen}
-\usepackage{datetime}
 
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \newcommand{\thesisTitle}{\fontsize{22pt}}
@@ -50,6 +48,10 @@
 \newcommand{\fakultet}{\textbf{FAKULTET ORGANIZACIJE I INFORMATIKE}}
 \newcommand{\grad}{\textbf{VARA\v{Z}DIN}}
 \newcommand{\gradSmall}{\textbf{Vara\v{z}din}}
+
+% formatting - times new roman text and titles arial
+\usepackage[T1]{fontenc}
+\usepackage{newtxmath,newtxtext}
 
 %format date
 \newdateformat{monthyeardate}{%
