@@ -30,6 +30,12 @@
 \usepackage[pdftex]{graphicx}
 \DeclareGraphicsExtensions{.png,.pdf,.jpg,.jpeg}
 
+% center all titles
+\usepackage{sectsty}
+\chapterfont{\centering }
+\sectionfont{\raggedright }
+\subsectionfont{\raggedright }
+
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \newcommand{\thesisTitle}{\fontsize{22pt}}
 \renewcommand{\rmdefault}{\sfdefault}
@@ -52,6 +58,8 @@
 % formatting - times new roman text and titles arial
 \usepackage[T1]{fontenc}
 \usepackage{newtxmath,newtxtext}
+\usepackage{fontspec}
+\newfontfamily\arialfont{Arial}
 
 %format date
 \newdateformat{monthyeardate}{%
@@ -88,9 +96,9 @@
 \end{flushleft}
 \vspace{0.1\pdfpageheight}
 
-\sc{\textbf{\Huge{\MakeUppercase{\naslov}}}} \\
+\sc{\textbf{\Huge{\MakeUppercase {\arialfont {\naslov}}}}} \\
 \vspace{0.01\pdfpageheight}
-\sc{\textbf{\large{\MakeUppercase{\vrstaRada}}}} \\
+\sc{\textbf{\large{\MakeUppercase{\arialfont {\vrstaRada}}}}} \\
 \end{center}
 \vfill
 
@@ -131,9 +139,9 @@
 \vspace{0.1\pdfpageheight}
 
 
-\textbf{\sc{\textbf{\Huge{\MakeUppercase{\naslov}}}}} \\
+\textbf{\sc{\textbf{\Huge{\MakeUppercase{\arialfont {\naslov}}}}}} \\
 \vspace{0.01\pdfpageheight}
-\sc{\textbf{\large{\MakeUppercase{\vrstaRada}}}} \\
+\sc{\textbf{\large{\MakeUppercase{\arialfont {\vrstaRada}}}}} \\
 
 \end{center}
 \vfill
@@ -142,7 +150,7 @@
 \begin{minipage}{0.3\textwidth}
 \end{minipage}
 \hfill
-\begin{minipage}{0.3\textwidth}
+\begin{minipage}{0.4\textwidth}
 % Mentor
 \begin{flushleft}
     \textbf{Mentor: }\\ 
