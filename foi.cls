@@ -12,9 +12,10 @@
 % Note: Adjusted template for usage master thesis.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{foi}[2011/10/28 Faculty of Organization and Informatics Thesis template class]
-
+\ProvidesClass{foi}[2016/12/14 Faculty of Organization and Informatics Master Thesis template class]
 \LoadClass{report}
+
+% formatting - times new roman text and titles arial
 \usepackage[margin=3cm]{geometry}
 \usepackage{listings}
 \usepackage{color}
@@ -24,18 +25,7 @@
 \usepackage[pdftex]{graphicx}
 \DeclareGraphicsExtensions{.png,.pdf,.jpg,.jpeg}
 
-\usepackage{sfmath}
-\usepackage[pdftex,
-bookmarks=true,
-bookmarksnumbered=true,
-pdfpagemode=UseNone,
-pdfstartview=FitH,
-pdfpagelayout=SinglePage,
-colorlinks=false,
-urlcolor=black,
-pdfborder={0 0 0}
-]{hyperref}
-
+\usepackage{mathptmx}
 \usepackage{fancyheadings}
 \usepackage{lastpage}
 \usepackage{setspace}
@@ -66,10 +56,8 @@ pdfborder={0 0 0}
   \monthname[\THEMONTH] \THEYEAR.}
 
 %document headers and footers
-\chead{}
-\rhead{  }
 \cfoot{}
-\rfoot{\thepage/\pageref{LastPage}} % \today -> \rfoot{\number\month/\number\day/\number\year} 
+\rfoot{\thepage}
 \pagestyle{fancyplain}
 
 \def\authorblock[#1]#2{\textbf{\normalsize #1} \\#2}
