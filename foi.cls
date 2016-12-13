@@ -27,8 +27,6 @@
 \usepackage[croatian]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{url}
-\usepackage[pdftex]{graphicx}
-\DeclareGraphicsExtensions{.png,.pdf,.jpg,.jpeg}
 
 % center all titles
 \usepackage{sectsty}

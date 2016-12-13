@@ -1,11 +1,10 @@
 \select@language {croatian}
 \contentsline {chapter}{\numberline {1}Uvod}{1}
-\contentsline {chapter}{\numberline {2}Slike}{2}
-\contentsline {section}{\numberline {2.1}Section}{2}
-\contentsline {subsection}{\numberline {2.1.1}Subsection}{2}
-\contentsline {chapter}{\numberline {3}Tablice}{3}
-\contentsline {chapter}{\numberline {4}Formule}{4}
-\contentsline {chapter}{\numberline {5}Hiperveze}{5}
-\contentsline {chapter}{\numberline {6}Programski k\^{o}d}{6}
-\contentsline {chapter}{\numberline {7}Citiranje literature}{7}
+\contentsline {section}{\numberline {1.1}Section}{2}
+\contentsline {subsection}{\numberline {1.1.1}Subsection}{2}
+\contentsline {chapter}{\numberline {2}Tablice}{3}
+\contentsline {chapter}{\numberline {3}Formule}{4}
+\contentsline {chapter}{\numberline {4}Hiperveze}{5}
+\contentsline {chapter}{\numberline {5}Programski k\^{o}d}{6}
+\contentsline {chapter}{\numberline {6}Citiranje literature}{7}
 \contentsline {chapter}{Bibliografija}{7}
