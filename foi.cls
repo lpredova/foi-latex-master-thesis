@@ -85,6 +85,42 @@ pdfborder={0 0 0}
 \thispagestyle{empty}
 \begin{center}
 \sc{\sveuciliste}  \\
+\vspace{0.01\pdfpageheight}
+\sc{\fakultet}  \\
+\vspace{0.01\pdfpageheight}
+\sc{\grad} \\
+
+\vspace{0.1\pdfpageheight}
+\begin{flushleft}
+    \autori{\brojAutora}
+\end{flushleft}
+\vspace{0.1\pdfpageheight}
+
+\textbf{\sc{\Huge{\naslov}}} \\
+\vspace{0.05\pdfpageheight}
+\sc{\large{\vrstaRada}} \\
+\end{center}
+\vfill
+
+\noindent
+\begin{minipage}{\textwidth}
+\begin{minipage}{0.3\textwidth}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\end{minipage}
+\vspace{0.1\pdfpageheight}
+\vfill
+\centering{\sc{{\grad}, \the\year.}}
+\end{minipage}
+\normalfont
+\newpage
+\setcounter{page}\@ne
+
+% detail page
+\thispagestyle{empty}
+\begin{center}
+\sc{\sveuciliste}  \\
 \sc{\fakultet}  \\
 \sc{\grad} \\
 \begin{flushleft}
@@ -118,7 +154,6 @@ pdfborder={0 0 0}
 \newpage
 \setcounter{page}\@ne
 
-% detail page
 
 }
 
