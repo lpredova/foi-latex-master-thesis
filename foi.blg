@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: foi.aux
+The style file: foi.bst
+Database file #1: foi.bib.bib
+You're missing a field part---line 141 of file foi.bib.bib
+ :  month = 
+ :          ,
+I'm skipping whatever remains of this entry
+Warning--empty year in Pilgrim2006
+Warning--missing institution in BlonkEtAll1998
+You've used 16 entries,
+            2750 wiz_defined-function locations,
+            687 strings with 7113 characters,
+and the built_in function-call counts, 7775 in all, are:
+= -- 637
+> -- 250
+< -- 15
++ -- 98
+- -- 80
+* -- 474
+:= -- 1273
+add.period$ -- 52
+call.type$ -- 16
+change.case$ -- 101
+chr.to.int$ -- 16
+cite$ -- 18
+duplicate$ -- 608
+empty$ -- 623
+format.name$ -- 116
+if$ -- 1539
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 119
+newline$ -- 84
+num.names$ -- 70
+pop$ -- 248
+preamble$ -- 1
+purify$ -- 89
+quote$ -- 0
+skip$ -- 244
+stack$ -- 0
+substring$ -- 309
+swap$ -- 283
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 132
+warning$ -- 2
+while$ -- 66
+width$ -- 0
+write$ -- 208
+(There was 1 error message)
