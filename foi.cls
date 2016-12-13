@@ -6,6 +6,10 @@
 %
 % date:   28.09.2009.
 % author: Markus Schatten
+%
+% date: 13.12.2016
+% author: Lovro Predovan
+% Note: Adjusted template for usage master thesis.
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{foi}[2011/10/28 Faculty of Organization and Informatics Thesis template class]
@@ -14,6 +18,7 @@
 
 
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
+\newcommand{\thesisTitle}{\fontsize{22pt}}
 
 \usepackage[margin=3cm]{geometry}
 
@@ -58,9 +63,10 @@ pdfborder={0 0 0}
 \newcommand{\vrstaRada}{Diplomski rad}
 \newcommand{\mentor}{Ime i prezime mentora}
 \newcommand{\suocjenjivac}{Ime i prezime suocjenjiva\v{c}a}
-\newcommand{\sveuciliste}{SVEU\v{C}ILI\v{S}TE U ZAGREBU}
-\newcommand{\fakultet}{FAKULTET ORGANIZACIJE I INFORMATIKE}
-\newcommand{\grad}{Vara\v{z}din}
+\newcommand{\sveuciliste}{\textbf{SVEU\v{C}ILI\v{S}TE U ZAGREBU}}
+\newcommand{\fakultet}{\textbf{FAKULTET ORGANIZACIJE I INFORMATIKE}}
+\newcommand{\grad}{\textbf{VARA\v{Z}DIN}}
+\newcommand{\gradSmall}{\textbf{Vara\v{z}din}}
 
 %document headers and footers
 \chead{}
@@ -75,8 +81,7 @@ pdfborder={0 0 0}
 \newcommand{\autori}[1]
 {
 \ifthenelse{\equal{#1}{1}}{
-	\authorblock[\autorA]{
-	\brin{\brIndeksaA}}}{}
+	\authorblock[\autorA]{}}{}
 }
 
 \renewcommand{\maketitle}
@@ -97,7 +102,7 @@ pdfborder={0 0 0}
 \vspace{0.1\pdfpageheight}
 
 \textbf{\sc{\Huge{\naslov}}} \\
-\vspace{0.05\pdfpageheight}
+\vspace{0.01\pdfpageheight}
 \sc{\large{\vrstaRada}} \\
 \end{center}
 \vfill
@@ -111,7 +116,7 @@ pdfborder={0 0 0}
 \end{minipage}
 \vspace{0.1\pdfpageheight}
 \vfill
-\centering{\sc{{\grad}, \the\year.}}
+\centering{\sc{{\gradSmall}, \textbf{\the\year.}}}
 \end{minipage}
 \normalfont
 \newpage
