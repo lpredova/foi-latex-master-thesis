@@ -47,12 +47,13 @@ pdfborder={0 0 0}
 \renewcommand{\rmdefault}{\sfdefault}
 \renewcommand{\scdefault}{\sfdefault}
 
-\newcommand{\naslov}{Naslov rada}
+\newcommand{\naslov}{NASLOV RADA}
 \newcommand{\kolegij}{Kolegij}
 \newcommand{\autorA}{Ime i prezime studenta}
 \newcommand{\brIndeksaA}{43001}
 \newcommand{\brojAutora}{1}
-\newcommand{\vrstaRada}{Diplomski rad}
+\newcommand{\vrstaRada}{DIPLOMSKI RAD}
+\newcommand{\diplSmjer}{Baze podataka}
 \newcommand{\mentor}{Ime i prezime mentora}
 \newcommand{\suocjenjivac}{Ime i prezime suocjenjiva\v{c}a}
 \newcommand{\sveuciliste}{\textbf{SVEU\v{C}ILI\v{S}TE U ZAGREBU}}
@@ -128,18 +129,21 @@ pdfborder={0 0 0}
 
 \vspace{0.05\pdfpageheight}
 
+\textbf{
 \begin{flushleft}
     \autori{\brojAutora}
     \vspace{0.01\pdfpageheight}
-    Maticni broj: asdasd \\
+    Maticni broj: {\brIndeksaA} \\
     \vspace{0.01\pdfpageheight}
-    Studij: Baze podataka
-\end{flushleft}
+    Studij: {\diplSmjer}
+\end{flushleft}}
 
-\vspace{0.2\pdfpageheight}
+\vspace{0.1\pdfpageheight}
 
-\textbf{\sc{\Huge{\naslov}}} \\
-\sc{\large{\vrstaRada}} \\
+
+\textbf{\sc{\textbf{\Huge{\naslov}}}} \\
+\sc{\textbf{\large{\vrstaRada}}} \\
+
 \end{center}
 \vfill
 \noindent
@@ -148,15 +152,15 @@ pdfborder={0 0 0}
 \end{minipage}
 \hfill
 \begin{minipage}{0.5\textwidth}
-
 % Mentor
 \begin{flushright}
-    Mentor: \\ 
-    \textbf{\mentor}
+    \textbf{Mentor: }\\ 
+    \mentor
 \end{flushright}
 
 \end{minipage}
-\vspace{0.1\pdfpageheight}
+
+\vspace{0.2\pdfpageheight}
 \vfill
 \centering{\sc{{\gradSmall}, \monthyeardate\today}}
 \end{minipage}
