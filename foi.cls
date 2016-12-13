@@ -98,9 +98,9 @@ pdfborder={0 0 0}
 \end{flushleft}
 \vspace{0.1\pdfpageheight}
 
-\textbf{\sc{\Huge{\naslov}}} \\
+\sc{\textbf{\Huge{\MakeUppercase{\naslov}}}} \\
 \vspace{0.01\pdfpageheight}
-\sc{\large{\vrstaRada}} \\
+\sc{\textbf{\large{\MakeUppercase{\vrstaRada}}}} \\
 \end{center}
 \vfill
 
@@ -141,8 +141,9 @@ pdfborder={0 0 0}
 \vspace{0.1\pdfpageheight}
 
 
-\textbf{\sc{\textbf{\Huge{\naslov}}}} \\
-\sc{\textbf{\large{\vrstaRada}}} \\
+\textbf{\sc{\textbf{\Huge{\MakeUppercase{\naslov}}}}} \\
+\vspace{0.01\pdfpageheight}
+\sc{\textbf{\large{\MakeUppercase{\vrstaRada}}}} \\
 
 \end{center}
 \vfill
@@ -151,16 +152,15 @@ pdfborder={0 0 0}
 \begin{minipage}{0.3\textwidth}
 \end{minipage}
 \hfill
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.3\textwidth}
 % Mentor
-\begin{flushright}
+\begin{flushleft}
     \textbf{Mentor: }\\ 
     \mentor
-\end{flushright}
-
+\end{flushleft}
 \end{minipage}
 
-\vspace{0.2\pdfpageheight}
+\vspace{0.25\pdfpageheight}
 \vfill
 \centering{\sc{{\gradSmall}, \monthyeardate\today}}
 \end{minipage}
