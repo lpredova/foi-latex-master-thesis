@@ -57,8 +57,8 @@ pdfborder={0 0 0}
 \newcommand{\brojAutora}{1}
 \newcommand{\vrstaRada}{Diplomski rad}
 \newcommand{\mentor}{Ime i prezime mentora}
-\newcommand{\suocjenjivac}{Ime i prezime suocjenjivaca}
-\newcommand{\sveuciliste}{SVEUCILISTE U ZAGREBU}
+\newcommand{\suocjenjivac}{Ime i prezime suocjenjiva\v{c}a}
+\newcommand{\sveuciliste}{SVEU\v{C}ILI\v{S}TE U ZAGREBU}
 \newcommand{\fakultet}{FAKULTET ORGANIZACIJE I INFORMATIKE}
 \newcommand{\grad}{Vara\v{z}din}
 
@@ -81,9 +81,16 @@ pdfborder={0 0 0}
 
 \renewcommand{\maketitle}
 {
+%cover page
 \thispagestyle{empty}
 \begin{center}
-\sc{\fakultet} \\
+\sc{\sveuciliste}  \\
+\sc{\fakultet}  \\
+\sc{\grad} \\
+\begin{flushleft}
+    \autori{\brojAutora}
+\end{flushleft}
+
 \vspace{0.3\pdfpageheight}
 \textbf{\sc{\Huge{\naslov}}} \\
 \sc{\large{\vrstaRada}} \\
@@ -110,7 +117,11 @@ pdfborder={0 0 0}
 \normalfont
 \newpage
 \setcounter{page}\@ne
+
+% detail page
+
 }
+
 
 \usepackage{natbib}
 \bibliographystyle{foi} % plainnat
