@@ -1,7 +1,7 @@
 %
-% foithesis.cls v.0.02
+% foithesis.cls v.0.03
 %
-% A LaTeX2e template for the Faculty of Organization and Informatics
+% A XeLatex template for the Faculty of Organization and Informatics
 % Varazdin, Croatia (http://www.foi.hr)
 %
 % date:   28.09.2009.
@@ -27,6 +27,7 @@
 \usepackage[croatian]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{url}
+\usepackage{float}
 
 % center all titles
 \usepackage{sectsty}
