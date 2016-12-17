@@ -1,7 +1,7 @@
 %
-% foithesis.cls v.0.03
+% foithesis.cls v.0.02
 %
-% A XeLatex template for the Faculty of Organization and Informatics
+% A XeLaTeX template for the Faculty of Organization and Informatics
 % Varazdin, Croatia (http://www.foi.hr)
 %
 % date:   28.09.2009.
@@ -29,12 +29,6 @@
 \usepackage{url}
 \usepackage{float}
 
-% center all titles
-\usepackage{sectsty}
-\chapterfont{\centering }
-\sectionfont{\raggedright }
-\subsectionfont{\raggedright }
-
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \newcommand{\thesisTitle}{\fontsize{22pt}}
 \renewcommand{\rmdefault}{\sfdefault}
@@ -60,6 +54,15 @@
 \usepackage{fontspec}
 \newfontfamily\arialfont{Arial}
 
+% center all titles
+\usepackage{sectsty}
+\sectionfont{\raggedright }
+\subsectionfont{\raggedright }
+
+\usepackage{titlesec}
+\titleformat{\chapter}{\huge\bfseries\centering}{\thechapter.}{18pt}{\huge\bfseries}
+
+
 %format date
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH] \THEYEAR.}
@@ -67,7 +70,6 @@
 %document headers and footers
 \cfoot{}
 \rfoot{\thepage}
-\pagestyle{fancyplain}
 
 \def\authorblock[#1]#2{\textbf{\normalsize #1} \\#2}
 \def\brin#1{\normalsize br. indeksa: #1}
@@ -130,7 +132,7 @@
 \begin{flushleft}
     \autori{\brojAutora}
     \vspace{0.01\pdfpageheight}
-    Maticni broj: {\brIndeksaA} \\
+    Mati\v{c}ni broj: {\brIndeksaA} \\
     \vspace{0.01\pdfpageheight}
     Studij: {\diplSmjer}
 \end{flushleft}}
@@ -170,5 +172,4 @@
 \usepackage{natbib}
 \bibliographystyle{foi} % plainnat
 \bibpunct{(}{)}{,}{a}{,}{;}
-
 
