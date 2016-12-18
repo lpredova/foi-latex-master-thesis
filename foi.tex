@@ -13,7 +13,6 @@
 \tableofcontents
 \thispagestyle{empty}
 \setcounter{page}{0}
-\onehalfspacing
 
 \chapter{Uvod}
 
@@ -27,7 +26,7 @@ Za prikaz slika mo\v{z}e se koristiti sljede\'{c}a sintaksa (\ref{slika-1}).
 \begin{figure}[h]
 \centering 
 \includegraphics[width=0.95\textwidth]{model.png}
-\caption{UML model za biometrijske sustave \citep{Schatten2008}}
+\caption{UML model za biometrijske sustave \cite{Schatten2008}}
 \label{slika-1}
 \end{figure}
 
@@ -111,8 +110,9 @@ Dobro je proučiti modul \texttt{lstlisting} jer ima mnogo interesantnih opcija 
 
 \chapter{Citiranje literature}
 
-Za potrebe citiranja kori\v{s}tene literature koristi se datoteka foi.bib (BiBteX format) u kojoj valja postaviti odgovaraju\'{c}e reference. U postoje\'{c}oj datoteci postoje primjeri za knjige \citep{Baral2004, Jennex2007, JohsansenSwigart2000, PogacnikBloom1998}, \v{c}lanke u \v{c}asopisima \citep{BacaEtAl2007, Jurin2006}, \v{c}lanke u uredni\v{c}kim knjigama \citep{Garzarelli2004, Luhmann2003}, \v{c}lanke u zbornicima konferencija \citep{AbeleBischoff2001, BacaEtAl2006}, zatim doktorske disertacije \citep{Bahr2009}, magistarske radove \citep{Schatten2008}, priru\v{c}nike (manuale) \citep{HAZU2004}, tehni\v{c}ke izvje\v{s}taje \citep{BlonkEtAll1998}, kao i Internet reference \citep{Berger2006, Pilgrim2006}. Citiranjem pojedinih referenci u tekstu (naredba \texttt{citep}) \LaTeXe\ automatski generira bibliografiju na kraju dokumenta.
+Za potrebe citiranja kori\v{s}tene literature koristi se datoteka foi.bib (BiBteX format) u kojoj valja postaviti odgovaraju\'{c}e reference. U postoje\'{c}oj datoteci postoje primjeri za knjige \cite{Baral2004, Jennex2007, JohsansenSwigart2000, PogacnikBloom1998}, \v{c}lanke u \v{c}asopisima \cite{BacaEtAl2007, Jurin2006}, \v{c}lanke u uredni\v{c}kim knjigama \cite{Garzarelli2004, Luhmann2003}, \v{c}lanke u zbornicima konferencija \cite{AbeleBischoff2001, BacaEtAl2006}, zatim doktorske disertacije \cite{Bahr2009}, magistarske radove \cite{Schatten2008}, priru\v{c}nike (manuale) \cite{HAZU2004}, tehni\v{c}ke izvje\v{s}taje \cite{BlonkEtAll1998}, kao i Internet reference \cite{Berger2006, Pilgrim2006}. Citiranjem pojedinih referenci u tekstu (naredba \texttt{cite}) \LaTeXe\ automatski generira bibliografiju na kraju dokumenta.
 
-\addcontentsline{toc}{chapter}{Bibliografija}
+\bibliographystyle{unsrt}
 \bibliography{foi.bib}
+\listoffigures
 \end{document}

@@ -54,6 +54,10 @@
 \usepackage{fontspec}
 \newfontfamily\arialfont{Arial}
 
+%line spacing
+\usepackage{setspace}
+\onehalfspacing
+
 % center all titles
 \usepackage{sectsty}
 \sectionfont{\raggedright }
@@ -61,7 +65,7 @@
 
 \usepackage{titlesec}
 \titleformat{\chapter}{\huge\bfseries\centering}{\thechapter.}{18pt}{\huge\bfseries}
-
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
 
 %format date
 \newdateformat{monthyeardate}{%
@@ -167,9 +171,3 @@
 \newpage
 \setcounter{page}\@ne
 }
-
-
-\usepackage{natbib}
-\bibliographystyle{foi} % plainnat
-\bibpunct{(}{)}{,}{a}{,}{;}
-

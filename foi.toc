@@ -7,4 +7,3 @@
 \contentsline {chapter}{\numberline {4}Hiperveze}{5}
 \contentsline {chapter}{\numberline {5}Programski k\^{o}d}{6}
 \contentsline {chapter}{\numberline {6}Citiranje literature}{7}
-\contentsline {chapter}{Bibliografija}{7}
