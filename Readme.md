@@ -1,7 +1,8 @@
-### Foi TeX  template 
----
+## Foi TeX  template 
 
-####**Note: This is NOT official template. Use at your own risk!**
+I was too lazy to write my entire thesis from scratch in MS Word :fire: so I made this template.
+
+###**Note: This is NOT official template. Use at own responsibility!**
 
 Template for master thesis for [Faculty of Organization and Informatics](http://www.foi.unizg.hr/). 
 
@@ -9,11 +10,13 @@ Inspired by docx template found [here](https://www.google.hr/url?sa=t&rct=j&q=&e
 
 Thanks to [mschatten](https://github.com/mschatten) for creating initial version of this template. 
 
-I just adjusted initial template because I was too lazy to write my entire thesis again in MS Word :fire: :shit: :fire:
 
-**IMPORTANT!**
+###Result
+[FOI LaTex template PDF](https://github.com/lpredova/foi-latex-master-thesis/blob/master/foi.pdf)
 
-Use **XeLatex **to compile *(because of **Arial** and **Times New Roman** font)*.
+###Compiling
+
+Use **XeLatex ** to compile *(because of **Arial** and **Times New Roman** font)*.
 
 Prefered editors:
 
@@ -22,5 +25,5 @@ Prefered editors:
 
 
 ---
-Lovro Predovan 2016
+Lovro Predovan 2017
 
