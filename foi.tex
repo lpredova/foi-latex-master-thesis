@@ -8,7 +8,7 @@
 \renewcommand{\vrstaRada}{Diplomski rad} % Vrsta rada: Seminarski rad, Pristupni rad, Projekt ...
 
 \begin{document}
-	
+\bibliographystyle{plainnat}
 \maketitle
 \tableofcontents
 \thispagestyle{empty}
@@ -76,10 +76,13 @@ U predlo\v{s}ku su omogu\'{c}ene i hiperveze oblika \url{http://cb.foi.hr}. Kori
 
 Primjer programskog k\^{o}da prikazan je u nastavku:
 
-\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
-\lstset{commentstyle=\textit,language=python}
-\lstset{backgroundcolor=\color{lbcolor},rulecolor=}
-\begin{lstlisting}[frame=tb]{}
+\begin{minted}[
+baselinestretch=1.2,
+bgcolor=gray!10,
+framesep=10pt
+]{python}
+
+
 # map.py
 # We can use append here
 def map( fun, list ):
@@ -103,14 +106,17 @@ map( increment, [1,2,3,4,5] )
 # should return [2,3,4,5,6]
 map( increment, [1,2,3,4,5] ) == rmap( increment, [1,2,3,4,5] )
 # There outputs should be the same!
-
-\end{lstlisting}
+\end{minted}
 
 Dobro je proučiti modul \texttt{lstlisting} jer ima mnogo interesantnih opcija za formatiranje k\^{o}da poput dodavanja brojeva linija, različitih boja za različite ključne riječi i sl.
 
 \chapter{Citiranje literature}
 
 Za potrebe citiranja kori\v{s}tene literature koristi se datoteka foi.bib (BiBteX format) u kojoj valja postaviti odgovaraju\'{c}e reference. U postoje\'{c}oj datoteci postoje primjeri za knjige \cite{Baral2004, Jennex2007, JohsansenSwigart2000, PogacnikBloom1998}, \v{c}lanke u \v{c}asopisima \cite{BacaEtAl2007, Jurin2006}, \v{c}lanke u uredni\v{c}kim knjigama \cite{Garzarelli2004, Luhmann2003}, \v{c}lanke u zbornicima konferencija \cite{AbeleBischoff2001, BacaEtAl2006}, zatim doktorske disertacije \cite{Bahr2009}, magistarske radove \cite{Schatten2008}, priru\v{c}nike (manuale) \cite{HAZU2004}, tehni\v{c}ke izvje\v{s}taje \cite{BlonkEtAll1998}, kao i Internet reference \cite{Berger2006, Pilgrim2006}. Citiranjem pojedinih referenci u tekstu (naredba \texttt{cite}) \LaTeXe\ automatski generira bibliografiju na kraju dokumenta.
+
+\chapter{Citiranje FOI }
+Kako bi se moglo citirati u potpunosti u skladu s pravilnikom, koristite \FoiCite{Baral2004}, \FoiCite{AbeleBischoff2001, BacaEtAl2006}. 
+
 
 \bibliographystyle{unsrt}
 \bibliography{foi.bib}

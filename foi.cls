@@ -15,6 +15,7 @@
 \ProvidesClass{foi}[2016/12/14 Faculty of Organization and Informatics Master Thesis template class]
 \LoadClass{report}
 
+\usepackage[numbers]{natbib}
 \usepackage{mathptmx}
 \usepackage{fancyheadings}
 \usepackage{lastpage}
@@ -28,6 +29,9 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{url}
 \usepackage{float}
+\usepackage{minted}
+\usepackage[dvipsnames]{xcolor}
+\usemintedstyle{pastie}
 
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \newcommand{\thesisTitle}{\fontsize{22pt}}
@@ -47,6 +51,10 @@
 \newcommand{\fakultet}{\textbf{FAKULTET ORGANIZACIJE I INFORMATIKE}}
 \newcommand{\grad}{\textbf{VARA\v{Z}DIN}}
 \newcommand{\gradSmall}{\textbf{Vara\v{z}din}}
+
+%foi cite
+\newcommand\FoiCite[1]{%
+	\citeauthor{#1}~(\citeyear{#1})}
 
 % formatting - times new roman text and titles arial
 \usepackage[T1]{fontenc}
