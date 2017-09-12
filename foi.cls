@@ -15,6 +15,7 @@
 \ProvidesClass{foi}[2016/12/14 Faculty of Organization and Informatics Master Thesis template class]
 \LoadClass{report}
 
+\usepackage{fontspec}
 \usepackage[numbers]{natbib}
 \usepackage{mathptmx}
 \usepackage{fancyheadings}
@@ -26,12 +27,13 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage[croatian]{babel}
-\usepackage[utf8x]{inputenc}
 \usepackage{url}
 \usepackage{float}
 \usepackage{minted}
+\usepackage{graphicx}
 \usepackage[dvipsnames]{xcolor}
 \usemintedstyle{pastie}
+
 
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \newcommand{\thesisTitle}{\fontsize{22pt}}
@@ -57,10 +59,16 @@
 	\citeauthor{#1}~(\citeyear{#1})}
 
 % formatting - times new roman text and titles arial
+% Arial
+\setsansfont[
+BoldFont=arialbd.ttf,
+ItalicFont=ariali.ttf,
+BoldItalicFont=arialbi.ttf
+]{arial.ttf}
+
 \usepackage[T1]{fontenc}
 \usepackage{newtxmath,newtxtext}
-\usepackage{fontspec}
-\newfontfamily\arialfont{Arial}
+%\newfontfamily\sffamily{Arial}
 
 %line spacing
 \usepackage{setspace}
@@ -109,9 +117,9 @@
 \end{flushleft}
 \vspace{0.1\pdfpageheight}
 
-\sc{\textbf{\Huge{\MakeUppercase {\arialfont {\naslov}}}}} \\
+\sc{\Huge\textbf{\MakeUppercase {\sffamily {\naslov}}}\par} \\
 \vspace{0.01\pdfpageheight}
-\sc{\textbf{\large{\MakeUppercase{\arialfont {\vrstaRada}}}}} \\
+\sc{\textbf{\large{\MakeUppercase{\sffamily{\vrstaRada}}}}} \\
 \end{center}
 \vfill
 
@@ -152,9 +160,9 @@
 \vspace{0.1\pdfpageheight}
 
 
-\textbf{\sc{\textbf{\Huge{\MakeUppercase{\arialfont {\naslov}}}}}} \\
+\textbf{\sc{\textbf{\Huge{\MakeUppercase{\sffamily{\naslov}}}}}} \\
 \vspace{0.01\pdfpageheight}
-\sc{\textbf{\large{\MakeUppercase{\arialfont {\vrstaRada}}}}} \\
+\sc{\textbf{\large{\MakeUppercase{\sffamily{\vrstaRada}}}}} \\
 
 \end{center}
 \vfill
