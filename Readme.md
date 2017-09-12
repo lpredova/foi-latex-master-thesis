@@ -2,7 +2,7 @@
 
 I was too lazy to write my entire thesis from scratch in MS Word :fire: so I made this template.
 
-# Note: This is NOT the official template. Use at your own responsibility!
+# Note: This is NOT the official template. Use at your own risk :fire:!
 
 Template for master thesis for [Faculty of Organization and Informatics](http://www.foi.unizg.hr/). 
 
