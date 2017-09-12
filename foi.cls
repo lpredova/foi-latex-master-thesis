@@ -68,7 +68,6 @@ BoldItalicFont=arialbi.ttf
 
 \usepackage[T1]{fontenc}
 \usepackage{newtxmath,newtxtext}
-%\newfontfamily\sffamily{Arial}
 
 %line spacing
 \usepackage{setspace}
